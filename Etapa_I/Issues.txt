@@ -1,0 +1,83 @@
+Application under test: Marvelopedia
+Release version: x.x.x
+
+Issues
+
+1)
+Summary: There is no response searching for valid strings that contain blank spaces on comics session
+Severity: B
+Steps:
+    1) Login to the app
+    2) Make a search with string "Spider Man" or other valid string that contain blank spaces
+    3) Check that there is no response
+Evidence:
+
+2)
+Summary: It’s possible to complete purchase process even with no units
+Severity: B
+Steps:
+    1) Login to the app
+    2) Add some item to the cart with at least 1 unit
+    3) Go to the shopping cart
+    4) Decrement all units
+    5) Click on payment button
+    6) Finalize purchase process with valid data 
+    3) Check that purchase process is completed successfully
+Evidence:
+
+3) 
+Summary: It’s possible to complete purchase process with invalid payment data
+Severity: B
+Steps:
+    1) Login to the app
+    2) Add some item to the cart with at least 1 unit
+    3) Go to the shopping cart
+    4) Click on payment button
+    5) Fill fields with invalid data. Ex: "sfdsfsd", "00000" and etc.
+    6) Finalize purchase process 
+    3) Check that purchase process is completed successfully
+Evidence:
+
+4) 
+Summary: It’s possible to complete purchase process with empty payment data
+Severity: B
+Steps:
+    1) Login to the app
+    2) Add some item to the cart with at least 1 unit
+    3) Go to the shopping cart
+    4) Click on payment button
+    5) Let fields empty
+    6) Finalize purchase process 
+    3) Check that purchase process is completed successfully
+Evidence:
+
+5) 
+Summary: There is no response searching for valid strings that contain blank spaces on heroes session
+Severity: B
+Steps:
+    1) Login to the app
+    2) Go to the Heroes session
+    2) Make a search with string "Spider Man" or other valid string that contain blank spaces
+    3) Check that there is no response
+Evidence:
+
+6)
+Summary: After remove item from shopping cart, total price is not updated
+Severity: B
+Steps:
+    1) Login to the app
+    2) Add some item to the cart with at least 1 unit
+    3) Go to the shopping cart
+    4) Remove item
+    5) Check that total price is not updated
+Evidence:
+
+7)
+Summary: Session is lost when android is at multi windows mode
+Severity: B
+Steps:
+    1) Login to the app
+    2) Go to the Heroes session
+    3) Press "Recent Apps Key" for some seconds
+    4) Check that after enter in multi window mode, the session is lost
+Evidence:
