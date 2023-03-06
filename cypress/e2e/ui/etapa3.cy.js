@@ -10,7 +10,7 @@ describe('Round 3 ', () => {
     // Search for Manaus
     cy.get("input[name='ss']").type('Manaus')
    
-    //
+    
     cy.get("body").then($body => {
       if ($body.find("[data-testid='autocomplete-results']")) {
         cy.get("button[type='submit']").click()
